@@ -64,7 +64,7 @@ def run_pipeline():
 
     print(phrase)
 
-    resp = sqs.send_message(
+    response = sqs.send_message(
         QueueUrl=submit_url,
         MessageBody="DP2 solution submission",
         MessageAttributes={
